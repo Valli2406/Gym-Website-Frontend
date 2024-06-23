@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-fit Gym</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- header section starts -->
+    <header class="header">
+         <section class="flex">
+            <div class="logo">
+              <img src="Logo.png" >
+              <a href="#home">Flexfit Center</a>
+            </div>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="About.html">About us</a>
+                <a href="services.html">Services</a>
+                <a href="Timeline.html">Timings</a>
+            </nav>  
+            <div id="menu-btn" class="fas fa-bars"></div>
+         </section>
+    </header>
+    <!-- header section ends -->
+  <!-- form starts  -->
+    <div class="align">
+     <div class="container">
+        <h1>Join the best right now...</h1>
+        <form action="noaction.php"> 
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder=" Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Locality">
+            </div>
+            <button class="button">submit</button>
+        </form>
+     </div>
+  <!-- form ends  -->
+   <!-- content section starts  -->
+     <div class="content">
+         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nisi voluptatum blanditiis vitae numquam explicabo magni tempora eos, odit magnam accusamus ullam, fugit ea quam ut! Fugiat necessitatibus sed sapiente?
+         </p>
+         <div class="btns">
+             <a href="#" class="btn"> Get the Diet!</a>
+             <a href="#" class="btn">Reach us</a>
+         </div>
+     </div>
+
+    </div>
+   <!-- content section ends  -->
+    <!-- footer section starts  -->
+    <footer class="footer">
+        <section>
+          <div class="share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-youtube"></a>
+          </div>
+          <div class="credit">&copy; copyright @ 2024 by <span>Flexfit Center</span>| all rights reserved</div>
+        </section>
+   </footer>
+   
+    <!-- footer sectioon ends  -->
+    <script >
+        let menuBtn = document.querySelector('#menu-btn');
+        let navbar = document.querySelector('.header .flex .navbar');
+
+menuBtn.onclick =() =>{
+    menuBtn.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+}
+
+    </script>
+</body>
+</html>
